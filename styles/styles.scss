@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+
+}
+$lila:hsl(249, 99%, 64%);
+$lilaoscuro: hsl(278, 94%, 30%);
+
+// input{
+//     border-image: linear-gradient($lila, $lilaoscuro);
+// }
+
+.container{
+    font-family: 'space';
+    display: flex;
+    min-height: 100vh;
+    &__color{
+        width: 30%;
+        background-image: url(../images/bg-main-desktop.png);
+        position: relative;
+        &__front{
+            position: relative;
+            &__logo{
+                position: absolute;
+                top: 206px;
+                left: 153px;
+            }
+            &__card{
+                position: absolute;
+                top: 184px;
+                left: 118px;
+            }
+            &--number{
+                    position: absolute;
+                    top: 319px;
+                    left: 151px;
+                    font-size: 35px;
+                    width: 100%;
+                    color: white;
+            }
+                 &--date{
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                top: 385px;
+                left: 151px;
+                align-items: center;
+                justify-content: space-between;
+                width: 85%;
+                font-size: 18px;
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+        &__back{
+            color: white;
+            img{
+                position: absolute;
+                top: 467px;
+                left: 200px;
+            }
+            p{
+                position: absolute;
+                left: 563px;
+                top: 576px;
+            }
+        }
+         
+    }
+
+    &__pay{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding: 300px;
+        gap: 8px;
+        &__back{
+             display: flex;
+            &--exp{
+                    input{
+                        width: 44%;
+                    }
+                }
+        }
+    }
+    &__confirmation{
+        padding: 300px;
+        text-align: center;
+        margin-top: 80px;
+        &__tittle{
+            position: relative;
+            &::before{
+                position: absolute;
+                content: "";
+                background-image: url(../images/icon-complete.svg);
+                background-repeat: no-repeat;
+                width: 100%;
+                top: -105px;
+                bottom: -20px;
+                left: 94px;
+                right: 10px;
+            }
+        }
+        &__button{
+            width: 100%;
+        }
+    }
+   
+}
+
+#labelout,
+#labeloutexp,
+#labeloutcvc{
+    color: red;
+    display: none;
+}
+

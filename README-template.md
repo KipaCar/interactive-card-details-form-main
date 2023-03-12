@@ -31,6 +31,13 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover, active, and focus states for interactive elements on the page
 
+- Complete el formulario y vea la actualización de los detalles de la tarjeta en tiempo real
+- Recibir mensajes de error cuando se envía el formulario si:
+  - Cualquier campo de entrada está vacío
+  - El número de tarjeta, la fecha de caducidad o los campos CVC tienen un formato incorrecto
+- Ver el diseño óptimo según el tamaño de pantalla de su dispositivo
+- Vea los estados de desplazamiento, activo y de enfoque para elementos interactivos en la página
+
 ### Screenshot
 
 ![](./screenshot.jpg)

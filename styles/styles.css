@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  font-family: 'space';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.container__color {
+  width: 30%;
+  background-image: url(../images/bg-main-desktop.png);
+  position: relative;
+}
+
+.container__color__front {
+  position: relative;
+}
+
+.container__color__front__logo {
+  position: absolute;
+  top: 206px;
+  left: 153px;
+}
+
+.container__color__front__card {
+  position: absolute;
+  top: 184px;
+  left: 118px;
+}
+
+.container__color__front--number {
+  position: absolute;
+  top: 319px;
+  left: 151px;
+  font-size: 35px;
+  width: 100%;
+  color: white;
+}
+
+.container__color__front--date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  top: 385px;
+  left: 151px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.container__color__back {
+  color: white;
+}
+
+.container__color__back img {
+  position: absolute;
+  top: 467px;
+  left: 200px;
+}
+
+.container__color__back p {
+  position: absolute;
+  left: 563px;
+  top: 576px;
+}
+
+.container__pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  padding: 300px;
+  gap: 8px;
+}
+
+.container__pay__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__pay__back--exp input {
+  width: 44%;
+}
+
+.container__confirmation {
+  padding: 300px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.container__confirmation__tittle {
+  position: relative;
+}
+
+.container__confirmation__tittle::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/icon-complete.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  top: -105px;
+  bottom: -20px;
+  left: 94px;
+  right: 10px;
+}
+
+.container__confirmation__button {
+  width: 100%;
+}
+
+#labelout,
+#labeloutexp,
+#labeloutcvc {
+  color: red;
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
