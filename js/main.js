@@ -76,22 +76,26 @@ function confirmValidation(event){
     
         if(inputOut.length===0){
             document.getElementById("labelout").style.display="block"; 
+            document.getElementById("card").style.borderColor="red" ; 
             error=true;  
            
                
         }
         if(inputOutMM.length===0){
             document.getElementById("labeloutexp").style.display="block";
+            document.getElementById("expMM").style.borderColor="red" ;
             error=true;  
             
         }
         if(inputOutYY.length===0){
             document.getElementById("labeloutexp").style.display="block";
+            document.getElementById("expYY").style.borderColor="red" ;
             error=true;  
           
         }
         if(inputOutCvC.length===0){
             document.getElementById("labeloutcvc").style.display="block";
+            document.getElementById("cvc").style.borderColor="red" ;
             error=true;    
            
         }

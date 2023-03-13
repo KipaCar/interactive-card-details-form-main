@@ -3,13 +3,13 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase;
   font-size: 18px;
 }
 
 .container {
-  font-family: 'space';
+  font-family: "space";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,6 +20,7 @@
   width: 30%;
   background-image: url(../images/bg-main-desktop.png);
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .container__color__front {
@@ -28,23 +29,24 @@
 
 .container__color__front__logo {
   position: absolute;
-  top: 206px;
-  left: 153px;
+  top: 217px;
+  left: -322px;
 }
 
 .container__color__front__card {
   position: absolute;
   top: 184px;
-  left: 118px;
+  left: -356px;
 }
 
 .container__color__front--number {
   position: absolute;
-  top: 319px;
-  left: 151px;
-  font-size: 35px;
+  top: 316px;
+  left: -330px;
+  font-size: 28px;
   width: 100%;
   color: white;
+  white-space: nowrap;
 }
 
 .container__color__front--date {
@@ -56,8 +58,8 @@
       -ms-flex-direction: row;
           flex-direction: row;
   position: absolute;
-  top: 385px;
-  left: 151px;
+  top: 350px;
+  left: -323px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -68,22 +70,27 @@
   font-size: 18px;
   color: white;
   text-transform: uppercase;
+  white-space: pre;
+}
+
+.container__color__front__MY {
+  margin-left: 127px;
 }
 
 .container__color__back {
   color: white;
 }
 
-.container__color__back img {
+.container__color__back__card {
   position: absolute;
   top: 467px;
-  left: 200px;
+  left: -234px;
 }
 
 .container__color__back p {
   position: absolute;
-  left: 563px;
-  top: 576px;
+  top: 577px;
+  left: 109px;
 }
 
 .container__pay {
@@ -94,9 +101,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 70%;
-  padding: 300px;
+  width: 30%;
   gap: 8px;
+  margin: 19% auto;
+  margin-right: 186px;
 }
 
 .container__pay__back {
@@ -132,11 +140,16 @@
 .container__pay__label {
   color: #21092f;
   margin-top: 18px;
+  white-space: nowrap;
+}
+
+.container__pay__input {
+  width: 100%;
 }
 
 .container__button {
   width: 100%;
-  padding: .75rem;
+  padding: 0.75rem;
   color: white;
   background-color: #21092f;
   border-radius: 5px;
@@ -152,6 +165,7 @@
 
 .container__confirmation__tittle {
   position: relative;
+  font-size: 20px;
 }
 
 .container__confirmation__tittle::before {
@@ -166,9 +180,17 @@
   right: 10px;
 }
 
+.container__confirmation__text {
+  font-size: 13px;
+  white-space: nowrap;
+  margin-top: 21px;
+  margin-bottom: 25px;
+  color: #dedddf;
+}
+
 .container__confirmation__button {
   width: 100%;
-  padding: .75rem;
+  padding: 0.75rem;
   color: white;
   background-color: #21092f;
   border-radius: 5px;
@@ -180,13 +202,16 @@
 #labeloutcvc {
   color: red;
   display: none;
+  font-size: 14px;
+  margin-top: 14px;
 }
 
 input {
   border: 1px solid #dedddf;
-  padding: .75rem;
-  border-radius: .5rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
   color: #21092f;
+  cursor: pointer;
 }
 
 .input::-webkit-input-placeholder {
@@ -203,5 +228,97 @@ input {
 
 .input::placeholder {
   color: var(#dedddf);
+}
+
+input:hover {
+  border-color: #21092f;
+}
+
+@media (max-width: 375px) {
+  html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container__color {
+    background-image: url(../images/bg-main-mobile.png);
+    height: 300px;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .container__color__front__card {
+    top: -172px;
+    left: 46px;
+    width: 65%;
+    z-index: 1;
+  }
+  .container__color__front__logo {
+    position: absolute;
+    top: -146px;
+    left: 59px;
+    z-index: 1;
+    width: 10%;
+  }
+  .container__color__front--number {
+    position: absolute;
+    top: -96px;
+    left: 60px;
+    font-size: 18px;
+    width: 100%;
+    color: white;
+    z-index: 1;
+  }
+  .container__color__front__name {
+    top: -444px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    font-size: 12px;
+    left: -90px;
+  }
+  .container__color__front__MY {
+    color: white;
+    position: relative;
+    font-size: 5px;
+    top: -448px;
+    left: 67px;
+    z-index: 1;
+  }
+  .container__color__front__MY span {
+    font-size: 14px;
+  }
+  .container__color__back p {
+    position: absolute;
+    left: 294px;
+    top: -192px;
+    font-size: 12px;
+  }
+  .container__color__back__card {
+    top: -251px;
+    left: 96px;
+    width: 65%;
+  }
+  .container__pay {
+    width: 70%;
+    margin: 0 40px;
+  }
+  .container__confirmation {
+    width: 300px;
+    text-align: center;
+    margin-left: 41px;
+    padding: 0;
+    margin-top: 124px;
+  }
+  .container__confirmation__button {
+    width: 77%;
+  }
+  .container__confirmation__tittle::before {
+    left: 109px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
